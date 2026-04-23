@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>songsheng</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                "Helvetica Neue", Arial, sans-serif;
+            background: #f4f5f7;
+            color: #1f2328;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .card {
+            width: min(92vw, 520px);
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.04),
+                0 10px 30px rgba(0, 0, 0, 0.06);
+            padding: clamp(32px, 6vw, 56px) clamp(24px, 5vw, 48px);
+            text-align: center;
+        }
+
+        .title {
+            font-size: clamp(40px, 8vw, 64px);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            color: #0d1117;
+        }
+
+        .subtitle {
+            margin-top: 14px;
+            font-size: clamp(14px, 3.2vw, 17px);
+            color: #6b7280;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .meme {
+            margin: clamp(28px, 6vw, 40px) auto;
+            width: clamp(120px, 28vw, 180px);
+            height: clamp(120px, 28vw, 180px);
+            border-radius: 50%;
+            background: linear-gradient(135deg, #fafafa 0%, #eef0f3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(64px, 14vw, 96px);
+            line-height: 1;
+            transform: rotate(-4deg);
+            transition: transform 0.3s ease;
+            user-select: none;
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+        }
+
+        .meme:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        .cta {
+            font-size: clamp(16px, 3.6vw, 20px);
+            font-weight: 500;
+            color: #374151;
+            letter-spacing: 0.01em;
+        }
+
+        .cta::before,
+        .cta::after {
+            content: "—";
+            color: #d1d5db;
+            margin: 0 10px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1 class="title">songsheng</h1>
+        <p class="subtitle">我是一个AI新手，我也不知道我在做什么</p>
+        <div class="meme" role="img" aria-label="一只猫咪">🐱</div>
+        <p class="cta">let's do something</p>
+    </main>
+</body>
+</html>
